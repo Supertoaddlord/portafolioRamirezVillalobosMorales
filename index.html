@@ -1,0 +1,171 @@
+<!DOCTYPE html><html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S.NicolasRamirezVillalobos&AustinMorales</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Playfair Display', serif;
+      background-color: #121212;
+      color: #f0f0f0;
+    }
+    .screen {
+      min-height: 100vh;
+      padding: 40px 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .hidden {
+      display: none;
+    }
+    .grid {
+      display: grid;
+      gap: 30px;
+    }
+    .grid-2 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    .grid-4 { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    button {
+      margin-top: 20px;
+      background: #00c79c;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+      font-family: 'Playfair Display', serif;
+    }
+    button:hover {
+      background: #00a784;
+    }
+    h1, h2 {
+      margin-bottom: 20px;}
+#screen1 {
+  background: linear-gradient(135deg, #091E3A, #1E3C72);
+  color: white;
+}
+#screen2 {
+  background: url('background2.jpg') center/cover no-repeat fixed;
+  
+}
+#screen3 {
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+  color: #222;
+}
+#screen4 {
+  background: #1f1f1f;
+}
+
+  </style>
+</head>
+<body>
+  <div id="screen1" class="screen">
+    <h1>S. Nicolas Ramirez Villalobos</h1>
+    <h1>y</h1>
+    <h1>Austin Morales</h1>
+    <h2>¿Quienes somos?</h2>
+    <img src="https://via.placeholder.com/300" alt="Screen One">
+    <div>
+      <button onclick="showScreen(2)">Proyectos</button>
+      <button onclick="showScreen(3)">Habilidades</button>
+      <button onclick="showScreen(4)">Otros</button>
+    </div>
+  </div>  <div id="screen2" class="screen hidden">
+    <h1>Algunos de nuestros Proyectos realizados</h1>
+    <div class="grid grid-2">
+      <div class="card">
+        <h2>Valeria: Espíritu de venganza</h2>
+        <img src="https://via.placeholder.com/150" alt="Proyecto 1">
+        <p>Videojuego metroidvania de ritmo acelerado realizado en Unity con C#.</p>
+      </div>
+      <div class="card">
+        <h2>Amai Buki</h2>
+        <img src="https://via.placeholder.com/150" alt="Proyecto 2">
+        <p>FPS con sistema LAN, hecho con GzDooM utilizando Zscript y ACS.</p>
+      </div>
+      <div class="card">
+        <h2>Cabañas Luna</h2>
+        <img src="https://via.placeholder.com/150" alt="Proyecto 3">
+        <p>Página web inspirada en mitología céltica y nórdica, realizada con HTML, CSS y JS.</p>
+      </div>
+      <div class="card">
+        <h2>Musica para videojuegos</h2>
+        <img src="Imagen musica 1.jpg"Proyecto 4>
+        <img src="Imagen musica 2.jpg"Proyecto 4>
+        <p>Proyectos musicales para videjuegos y apps creados en los daws WaveForm y FL Studio</p>
+      </div>
+
+      <div class="card">
+        <h2>Pagina Web de hamburguesas</h2>
+        <img src="https://via.placeholder.com/150" alt="Proyecto 4">
+        <p>Carta interactiva de hamburgueseria ficticia llamada MoonLightBurgers que contiene una voz que dice los ingredientes de la hamburugesa. Relizada en HTML, CCS, JS</p>
+      </div>
+    </div>
+    <button onclick="showScreen(1)">Regresar al Hub</button>
+  </div>  <div id="screen3" class="screen hidden">
+    <h1>Habilidades</h1>
+    <div class="grid grid-4">
+      <div class="card">
+        <h2>Lenguajes de Programación</h2>
+        <p>HTML, CSS, JavaScript, Python, C#, Zscript</p>
+      </div>
+      <div class="card">
+        <h2>Herramientas de Software</h2>
+        <p>Unity, Blender, FL Studio, Krita, entre otras</p>
+      </div>
+      <div class="card">
+        <h2>Diseño y Funcionalidad</h2>
+        <p>Originalidad en el aspecto artístico y la experiencia de usuario</p>
+      </div>
+      <div class="card">
+        <h2>Instalación y Mantenimiento</h2>
+        <p>Software, drivers, sistemas operativos</p>
+      </div>
+      <div class="card">
+        <h2>Gestión de Datos</h2>
+        <p>Bases de datos y estructuras organizadas</p>
+      </div>
+      <div class="card">
+        <h2>Producción de Recursos</h2>
+        <p>Ilustración, texturizado, música y generación de assets</p>
+      </div>
+    </div>
+    <button onclick="showScreen(1)">Regresar al Hub</button>
+  </div>  <div id="screen4" class="screen hidden">
+    <h1>Final Screen</h1>
+    <p>Aquí podría incluirse información adicional, enlaces, videos o contacto.</p>
+    <button onclick="showScreen(1)">Regresar al Hub</button>
+  </div>  <script>
+    function showScreen(num) {
+      for (let i = 1; i <= 4; i++) {
+        document.getElementById('screen' + i).classList.add('hidden');
+      }
+      document.getElementById('screen' + num).classList.remove('hidden');
+    }
+  </script></body>
+</html>
